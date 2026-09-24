@@ -1,17 +1,204 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Klayman Diamond Aparthotel | Normas</title><style>body{margin:0;background:#f5f7f8;color:#20242a;font-family:Arial,Helvetica,sans-serif;line-height:1.55}main{max-width:920px;margin:auto;padding:28px 20px 48px}header,section{background:#fff;border:1px solid #dfe3e8;border-radius:14px}header{text-align:center;padding:25px 22px;margin-bottom:18px}section{padding:24px 28px;margin:16px 0}.brand{font-size:30px;font-weight:700;margin:0}.subtitle{color:#606872;margin:6px 0 0}h1{font-size:22px}h2{font-size:19px}li{margin:10px 0}.notice{padding:15px 18px;border-left:4px solid #777;background:#f7f7f7;margin-top:18px}footer{text-align:center;color:#606872;font-size:13px;padding:12px}@media(max-width:600px){main{padding:12px}section{padding:19px}.brand{font-size:25px}}</style></head><body><main>
-<header><p class="brand">KLAYMAN DIAMOND APARTHOTEL</p><p class="subtitle">Normas del establecimiento</p></header>
-<section><h1>Bienvenido/a a Klayman Diamond Aparthotel</h1><p>Para garantizar una estancia segura y agradable, le rogamos que lea y respete las siguientes normas del establecimiento:</p><ul>
-<li><strong>Check-in:</strong> desde las 15:00 h. &nbsp;|&nbsp; <strong>Check-out:</strong> hasta las 12:00 h.</li>
-<li>Respete el descanso de los demás huéspedes, especialmente entre las <strong>22:00 y las 08:00 h</strong>. No se permiten fiestas ni reuniones que puedan ocasionar molestias.</li>
-<li>Está <strong>prohibido fumar</strong> en los apartamentos y espacios interiores. Solo se permite en las zonas habilitadas.</li>
-<li>Está prohibido consumir o fumar <strong>marihuana u otras sustancias ilegales</strong> en todo el establecimiento.</li>
-<li>No está permitido realizar <strong>topless</strong> en las instalaciones del establecimiento, incluidas las zonas de piscina y solárium.</li>
-<li>Solo podrán acceder y alojarse las <strong>personas debidamente registradas</strong>, sin superar la ocupación máxima permitida. El establecimiento podrá solicitar identificación oficial cuando sea necesario para verificar la identidad de las personas alojadas, gestionar la estancia o cumplir obligaciones legales.</li>
-<li><strong>No se admiten mascotas.</strong></li>
-<li>Los menores deberán estar supervisados por un adulto. Los bebés deberán utilizar <strong>pañal de piscina</strong>.</li>
-<li>Los huéspedes deberán hacer un uso correcto de las instalaciones y responder por los daños ocasionados cuando les sean imputables.</li>
-<li>El establecimiento podrá revisar el alojamiento tras el check-out para comprobar su estado.</li>
-<li>El establecimiento no se responsabiliza de objetos de valor no depositados en la caja fuerte, dentro de los límites establecidos por la legislación aplicable.</li>
-<li>Cualquier incidencia, queja o reclamación deberá comunicarse a <strong>Recepción</strong>.</li></ul></section>
-<section><h2>Incumplimiento de las normas</h2><p>Según la naturaleza y gravedad del incumplimiento, podrá dar lugar a:</p><ol><li>Advertencia al huésped.</li><li>Limitación o suspensión del uso de determinadas instalaciones cuando corresponda.</li><li>Reclamación del importe correspondiente por los daños ocasionados y, cuando proceda legal y contractualmente, cobro mediante el medio de pago facilitado como garantía.</li><li>Solicitud de abandono del establecimiento en casos graves, conforme a la legislación aplicable.</li><li>Comunicación a las autoridades competentes cuando corresponda.</li></ol><div class="notice"><strong>El huésped será responsable de los daños que le sean imputables ocasionados durante su estancia, de acuerdo con la legislación aplicable.</strong></div></section>
-<footer>Klayman Diamond Aparthotel · Información para huéspedes</footer></main></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Klayman Diamond Aparthotel | Normas</title>
+  <style>
+    :root{--bg:#f6f7f8;--card:#fff;--text:#1f2933;--muted:#667085;--line:#e5e7eb;--accent:#1f4f5f;--accent2:#eaf1f3}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    .wrap{max-width:860px;margin:0 auto;padding:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 3px 14px rgba(0,0,0,.05)}
+    .brand{text-align:center;margin-bottom:8px;font-weight:700;letter-spacing:.04em}.subtitle{text-align:center;color:var(--muted);margin:0 0 16px}
+    .langs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 22px;position:sticky;top:0;background:rgba(255,255,255,.96);padding:10px;border-radius:12px;z-index:3;border:1px solid var(--line)}
+    .lang-btn{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;font-weight:700;cursor:pointer}.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    h1{font-size:1.5rem;margin:0 0 14px} h2{font-size:1.12rem;margin:24px 0 8px} ul,ol{padding-left:1.3rem}.legal{display:none}.legal.active{display:block}
+    .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem;text-align:center}
+    @media(max-width:600px){.wrap{padding:10px}.card{padding:16px;border-radius:12px}.langs{gap:6px}.lang-btn{padding:8px 10px;font-size:.92rem}h1{font-size:1.3rem}}
+  </style>
+</head>
+<body>
+<div class="wrap"><div class="card">
+  <div class="brand">KLAYMAN DIAMOND APARTHOTEL</div>
+  <p class="subtitle" id="section-title">Normas del establecimiento</p>
+  <div class="langs" aria-label="Language selector">
+    <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+    <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+    <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+    <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+    <button class="lang-btn" data-lang="pt">🇵🇹 PT</button>
+  </div>
+
+  <section class="legal" data-lang="es">
+    <h1>Bienvenido/a a Klayman Diamond Aparthotel</h1>
+    <p>Para garantizar una estancia segura y agradable, le rogamos que lea y respete las siguientes normas del establecimiento:</p>
+    <ul>
+      <li><strong>Check-in:</strong> desde las 15:00 h. &nbsp;|&nbsp; <strong>Check-out:</strong> hasta las 12:00 h.</li>
+      <li>Respete el descanso de los demás huéspedes, especialmente entre las 22:00 y las 08:00 h. No se permiten fiestas ni reuniones que puedan ocasionar molestias.</li>
+      <li>Está prohibido fumar en los apartamentos y espacios interiores. Solo se permite en las zonas habilitadas.</li>
+      <li>Está prohibido consumir o fumar marihuana u otras sustancias ilegales en todo el establecimiento.</li>
+      <li>No está permitido realizar topless en las instalaciones del establecimiento, incluidas las zonas de piscina y solárium.</li>
+      <li>Solo podrán acceder y alojarse las personas debidamente registradas, sin superar la ocupación máxima permitida. El establecimiento podrá solicitar identificación oficial cuando sea necesario para verificar la identidad de las personas alojadas, gestionar la estancia o cumplir obligaciones legales.</li>
+      <li>No se admiten mascotas.</li>
+      <li>Los menores deberán estar supervisados por un adulto. Los bebés deberán utilizar pañal de piscina.</li>
+      <li>Los huéspedes deberán hacer un uso correcto de las instalaciones y responder por los daños ocasionados cuando les sean imputables.</li>
+      <li>El establecimiento podrá revisar el alojamiento tras el check-out para comprobar su estado.</li>
+      <li>El establecimiento no se responsabiliza de objetos de valor no depositados en la caja fuerte, dentro de los límites establecidos por la legislación aplicable.</li>
+      <li>Cualquier incidencia, queja o reclamación deberá comunicarse a Recepción.</li>
+    </ul>
+    <h2>Incumplimiento de las normas</h2>
+    <p>Según la naturaleza y gravedad del incumplimiento, podrá dar lugar a:</p>
+    <ol>
+      <li>Advertencia al huésped.</li>
+      <li>Limitación o suspensión del uso de determinadas instalaciones cuando corresponda.</li>
+      <li>Reclamación del importe correspondiente por los daños ocasionados y, cuando proceda legal y contractualmente, cobro mediante el medio de pago facilitado como garantía.</li>
+      <li>Solicitud de abandono del establecimiento en casos graves, conforme a la legislación aplicable.</li>
+      <li>Comunicación a las autoridades competentes cuando corresponda.</li>
+    </ol>
+    <p>El huésped será responsable de los daños que le sean imputables ocasionados durante su estancia, de acuerdo con la legislación aplicable.</p>
+  </section>
+
+  <section class="legal" data-lang="en">
+    <h1>Welcome to Klayman Diamond Aparthotel</h1>
+    <p>To help ensure a safe and pleasant stay, please read and comply with the following house rules:</p>
+    <ul>
+      <li><strong>Check-in:</strong> from 15:00. &nbsp;|&nbsp; <strong>Check-out:</strong> by 12:00.</li>
+      <li>Please respect other guests' rest, especially between 22:00 and 08:00. Parties or gatherings that may cause disturbance are not permitted.</li>
+      <li>Smoking is prohibited inside apartments and indoor areas. It is only permitted in designated areas.</li>
+      <li>The consumption or smoking of marijuana or other illegal substances is prohibited throughout the property.</li>
+      <li>Topless sunbathing is not permitted anywhere on the property, including the pool and solarium areas.</li>
+      <li>Only duly registered persons may access and stay at the property, without exceeding the maximum permitted occupancy. Official identification may be requested when necessary to verify guests' identity, manage the stay or comply with legal obligations.</li>
+      <li>Pets are not allowed.</li>
+      <li>Minors must be supervised by an adult. Babies must wear a swim nappy in the pool.</li>
+      <li>Guests must use the facilities properly and will be responsible for any damage attributable to them.</li>
+      <li>The property may inspect the accommodation after check-out to verify its condition.</li>
+      <li>The property is not responsible for valuables not deposited in the safe, within the limits established by applicable law.</li>
+      <li>Any incident, complaint or claim should be reported to Reception.</li>
+    </ul>
+    <h2>Failure to comply with the rules</h2>
+    <p>Depending on the nature and seriousness of the breach, the following measures may apply:</p>
+    <ol>
+      <li>A warning to the guest.</li>
+      <li>Restriction or suspension of access to certain facilities where appropriate.</li>
+      <li>A claim for the amount corresponding to damage caused and, where legally and contractually applicable, collection using the payment method provided as a guarantee.</li>
+      <li>A request to leave the property in serious cases, in accordance with applicable law.</li>
+      <li>Notification to the competent authorities where appropriate.</li>
+    </ol>
+    <p>Guests are responsible for any damage attributable to them during their stay, in accordance with applicable law.</p>
+  </section>
+
+  <section class="legal" data-lang="de">
+    <h1>Willkommen im Klayman Diamond Aparthotel</h1>
+    <p>Um einen sicheren und angenehmen Aufenthalt zu gewährleisten, bitten wir Sie, die folgenden Hausregeln zu lesen und einzuhalten:</p>
+    <ul>
+      <li><strong>Check-in:</strong> ab 15:00 Uhr. &nbsp;|&nbsp; <strong>Check-out:</strong> bis 12:00 Uhr.</li>
+      <li>Bitte respektieren Sie die Ruhe der anderen Gäste, insbesondere zwischen 22:00 und 08:00 Uhr. Partys oder Zusammenkünfte, die andere stören können, sind nicht gestattet.</li>
+      <li>Das Rauchen ist in den Apartments und Innenbereichen verboten. Es ist nur in den dafür ausgewiesenen Bereichen gestattet.</li>
+      <li>Der Konsum oder das Rauchen von Marihuana oder anderen illegalen Substanzen ist auf dem gesamten Gelände verboten.</li>
+      <li>Oben-ohne-Sonnenbaden ist auf dem gesamten Gelände, einschließlich Pool- und Solariumbereichen, nicht gestattet.</li>
+      <li>Nur ordnungsgemäß registrierte Personen dürfen die Anlage betreten und dort übernachten; die maximal zulässige Belegung darf nicht überschritten werden. Bei Bedarf kann ein amtlicher Ausweis verlangt werden, um die Identität der Gäste zu überprüfen, den Aufenthalt zu verwalten oder gesetzlichen Verpflichtungen nachzukommen.</li>
+      <li>Haustiere sind nicht gestattet.</li>
+      <li>Minderjährige müssen von einem Erwachsenen beaufsichtigt werden. Babys müssen im Pool eine Schwimmwindel tragen.</li>
+      <li>Die Gäste müssen die Einrichtungen ordnungsgemäß nutzen und haften für Schäden, die ihnen zuzurechnen sind.</li>
+      <li>Die Unterkunft kann das Apartment nach dem Check-out überprüfen, um dessen Zustand festzustellen.</li>
+      <li>Für Wertsachen, die nicht im Safe hinterlegt wurden, übernimmt die Unterkunft im Rahmen der geltenden gesetzlichen Bestimmungen keine Haftung.</li>
+      <li>Vorfälle, Beschwerden oder Reklamationen sind der Rezeption mitzuteilen.</li>
+    </ul>
+    <h2>Verstöße gegen die Hausregeln</h2>
+    <p>Je nach Art und Schwere des Verstoßes können folgende Maßnahmen ergriffen werden:</p>
+    <ol>
+      <li>Verwarnung des Gastes.</li>
+      <li>Einschränkung oder Aussetzung der Nutzung bestimmter Einrichtungen, sofern angemessen.</li>
+      <li>Geltendmachung der Kosten für verursachte Schäden und, soweit gesetzlich und vertraglich zulässig, Belastung des als Garantie hinterlegten Zahlungsmittels.</li>
+      <li>Aufforderung zum Verlassen der Unterkunft in schwerwiegenden Fällen gemäß geltendem Recht.</li>
+      <li>Benachrichtigung der zuständigen Behörden, sofern erforderlich.</li>
+    </ol>
+    <p>Der Gast haftet für Schäden, die ihm während seines Aufenthalts zuzurechnen sind, gemäß geltendem Recht.</p>
+  </section>
+
+  <section class="legal" data-lang="fr">
+    <h1>Bienvenue au Klayman Diamond Aparthotel</h1>
+    <p>Afin de garantir un séjour sûr et agréable, nous vous prions de lire et de respecter les règles suivantes :</p>
+    <ul>
+      <li><strong>Check-in :</strong> à partir de 15h00. &nbsp;|&nbsp; <strong>Check-out :</strong> jusqu'à 12h00.</li>
+      <li>Merci de respecter le repos des autres clients, en particulier entre 22h00 et 08h00. Les fêtes ou réunions susceptibles de causer des nuisances ne sont pas autorisées.</li>
+      <li>Il est interdit de fumer dans les appartements et les espaces intérieurs. Cela n'est autorisé que dans les zones prévues à cet effet.</li>
+      <li>La consommation ou le fait de fumer de la marijuana ou toute autre substance illégale est interdit dans tout l'établissement.</li>
+      <li>Le topless n'est pas autorisé dans l'établissement, y compris dans les zones de piscine et de solarium.</li>
+      <li>Seules les personnes dûment enregistrées peuvent accéder à l'établissement et y séjourner, sans dépasser l'occupation maximale autorisée. Une pièce d'identité officielle pourra être demandée lorsque cela est nécessaire pour vérifier l'identité des personnes hébergées, gérer le séjour ou respecter les obligations légales.</li>
+      <li>Les animaux ne sont pas admis.</li>
+      <li>Les mineurs doivent être sous la surveillance d'un adulte. Les bébés doivent porter une couche de bain dans la piscine.</li>
+      <li>Les clients doivent utiliser correctement les installations et sont responsables des dommages qui leur sont imputables.</li>
+      <li>L'établissement pourra vérifier l'hébergement après le départ afin d'en contrôler l'état.</li>
+      <li>L'établissement n'est pas responsable des objets de valeur non déposés dans le coffre-fort, dans les limites prévues par la législation applicable.</li>
+      <li>Tout incident, plainte ou réclamation doit être signalé à la Réception.</li>
+    </ul>
+    <h2>Non-respect des règles</h2>
+    <p>Selon la nature et la gravité du manquement, les mesures suivantes pourront être appliquées :</p>
+    <ol>
+      <li>Avertissement au client.</li>
+      <li>Limitation ou suspension de l'accès à certaines installations lorsque cela est approprié.</li>
+      <li>Réclamation du montant correspondant aux dommages causés et, lorsque cela est légalement et contractuellement applicable, débit du moyen de paiement fourni à titre de garantie.</li>
+      <li>Demande de quitter l'établissement dans les cas graves, conformément à la législation applicable.</li>
+      <li>Information des autorités compétentes lorsque cela est nécessaire.</li>
+    </ol>
+    <p>Le client est responsable des dommages qui lui sont imputables pendant son séjour, conformément à la législation applicable.</p>
+  </section>
+
+  <section class="legal" data-lang="pt">
+    <h1>Bem-vindo(a) ao Klayman Diamond Aparthotel</h1>
+    <p>Para garantir uma estadia segura e agradável, pedimos que leia e cumpra as seguintes regras do estabelecimento:</p>
+    <ul>
+      <li><strong>Check-in:</strong> a partir das 15:00. &nbsp;|&nbsp; <strong>Check-out:</strong> até às 12:00.</li>
+      <li>Respeite o descanso dos outros hóspedes, especialmente entre as 22:00 e as 08:00. Não são permitidas festas ou reuniões que possam causar incómodos.</li>
+      <li>É proibido fumar nos apartamentos e espaços interiores. Só é permitido nas zonas designadas.</li>
+      <li>É proibido consumir ou fumar marijuana ou outras substâncias ilegais em todo o estabelecimento.</li>
+      <li>Não é permitido fazer topless nas instalações do estabelecimento, incluindo as zonas da piscina e solário.</li>
+      <li>Apenas pessoas devidamente registadas podem aceder e permanecer no estabelecimento, sem exceder a ocupação máxima permitida. Poderá ser solicitada identificação oficial quando necessário para verificar a identidade dos hóspedes, gerir a estadia ou cumprir obrigações legais.</li>
+      <li>Não são permitidos animais de estimação.</li>
+      <li>Os menores devem estar sob supervisão de um adulto. Os bebés devem usar fralda própria para piscina.</li>
+      <li>Os hóspedes devem utilizar corretamente as instalações e serão responsáveis pelos danos que lhes sejam imputáveis.</li>
+      <li>O estabelecimento poderá verificar o alojamento após o check-out para confirmar o seu estado.</li>
+      <li>O estabelecimento não se responsabiliza por objetos de valor não depositados no cofre, dentro dos limites estabelecidos pela legislação aplicável.</li>
+      <li>Qualquer incidente, queixa ou reclamação deverá ser comunicado à Receção.</li>
+    </ul>
+    <h2>Incumprimento das regras</h2>
+    <p>Consoante a natureza e gravidade do incumprimento, poderão ser aplicadas as seguintes medidas:</p>
+    <ol>
+      <li>Advertência ao hóspede.</li>
+      <li>Limitação ou suspensão do uso de determinadas instalações, quando aplicável.</li>
+      <li>Reclamação do valor correspondente aos danos causados e, quando legal e contratualmente aplicável, cobrança através do meio de pagamento fornecido como garantia.</li>
+      <li>Pedido para abandonar o estabelecimento em casos graves, de acordo com a legislação aplicável.</li>
+      <li>Comunicação às autoridades competentes, quando aplicável.</li>
+    </ol>
+    <p>O hóspede será responsável pelos danos que lhe sejam imputáveis durante a estadia, de acordo com a legislação aplicável.</p>
+  </section>
+
+  <div class="foot">Klayman Diamond Aparthotel · <span id="foot-label">Información para huéspedes</span></div>
+</div></div>
+<script>
+(function(){
+  const labels={
+    es:{title:'Normas del establecimiento',foot:'Información para huéspedes'},
+    en:{title:'House rules',foot:'Guest information'},
+    de:{title:'Hausregeln',foot:'Gästeinformation'},
+    fr:{title:"Règlement de l'établissement",foot:'Informations pour les clients'},
+    pt:{title:'Regras do estabelecimento',foot:'Informação para hóspedes'}
+  };
+  const key='klayman_sihot_lang';
+  function setLang(lang){
+    if(!labels[lang]) lang='es';
+    document.documentElement.lang=lang;
+    document.querySelectorAll('.legal').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));
+    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+    document.getElementById('section-title').textContent=labels[lang].title;
+    document.getElementById('foot-label').textContent=labels[lang].foot;
+    try{localStorage.setItem(key,lang)}catch(e){}
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+  let saved='es'; try{saved=localStorage.getItem(key)||'es'}catch(e){}
+  setLang(saved);
+})();
+</script>
+</body>
+</html>

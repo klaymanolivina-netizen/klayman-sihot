@@ -1,74 +1,128 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Klayman Olivina | Protección de Datos</title>
-<style>
-:root{--ink:#20242a;--muted:#626a73;--line:#dfe3e8;--bg:#f5f7f8;--card:#fff}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-main{max-width:920px;margin:auto;padding:28px 20px 48px}
-header,section{background:var(--card);border:1px solid var(--line);border-radius:14px}
-header{text-align:center;padding:25px 22px;margin-bottom:16px}
-section{padding:24px 28px;margin:16px 0}
-.brand{font-size:30px;font-weight:700;margin:0;letter-spacing:.5px}
-.subtitle{color:var(--muted);margin:6px 0 0}
-h1{font-size:22px;margin:0 0 15px} h2{font-size:18px;margin:20px 0 7px}
-p{margin:8px 0 13px}
-.info{background:#f7f7f7;border-left:4px solid #777;padding:14px 17px;margin:15px 0}
-.contact{background:#f7f7f7;border-radius:9px;padding:15px 17px}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:12px}
-@media(max-width:600px){main{padding:12px}section{padding:19px}.brand{font-size:25px}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Klayman Olivina | Protección de Datos</title>
+  <style>
+    :root{--bg:#f6f7f8;--card:#fff;--text:#1f2933;--muted:#667085;--line:#e5e7eb;--accent:#1f4f5f}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    .wrap{max-width:860px;margin:0 auto;padding:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 3px 14px rgba(0,0,0,.05)}
+    .brand{text-align:center;margin-bottom:8px;font-weight:700;letter-spacing:.04em}.subtitle{text-align:center;color:var(--muted);margin:0 0 16px}
+    .langs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 22px;position:sticky;top:0;background:rgba(255,255,255,.96);padding:10px;border-radius:12px;z-index:3;border:1px solid var(--line)}
+    .lang-btn{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;font-weight:700;cursor:pointer}.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    h1{font-size:1.5rem;margin:0 0 14px} h2{font-size:1.12rem;margin:22px 0 7px}.legal{display:none}.legal.active{display:block}.foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem;text-align:center}
+    @media(max-width:600px){.wrap{padding:10px}.card{padding:16px;border-radius:12px}.langs{gap:6px}.lang-btn{padding:8px 10px;font-size:.92rem}h1{font-size:1.3rem}}
+  </style>
 </head>
 <body>
-<main>
-<header>
-<p class="brand">KLAYMAN OLIVINA</p>
-<p class="subtitle">Información sobre protección de datos personales</p>
-</header>
+<div class="wrap"><div class="card">
+  <div class="brand">KLAYMAN OLIVINA</div>
+  <p class="subtitle" id="section-title">Información sobre protección de datos personales</p>
+  <div class="langs" aria-label="Language selector">
+    <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+    <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+    <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+    <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+    <button class="lang-btn" data-lang="pt">🇵🇹 PT</button>
+  </div>
 
-<section>
-<h1>Protección de datos</h1>
-<p>De conformidad con la normativa vigente en materia de protección de datos personales, le informamos sobre el tratamiento de los datos facilitados durante la reserva, el registro y la estancia en el establecimiento.</p>
+  <section class="legal" data-lang="es">
+    <h1>Protección de datos</h1>
+    <p>De conformidad con la normativa vigente en materia de protección de datos personales, le informamos sobre el tratamiento de los datos facilitados durante la reserva, el registro y la estancia en el establecimiento.</p>
+    <h2>Responsable del tratamiento</h2><p>SPB Klayman S.L.<br>CIF: B76685130<br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>Correo electrónico: direccion@klaymanaparthotels.com</p>
+    <h2>Finalidades</h2><p>Los datos personales podrán ser tratados para gestionar la reserva y el alojamiento, prestar los servicios contratados, gestionar cobros y facturación, atender solicitudes, incidencias y reclamaciones y cumplir las obligaciones legales aplicables al establecimiento.</p>
+    <h2>Base jurídica</h2><p>El tratamiento se realizará, según corresponda, por ser necesario para la ejecución de la relación contractual con el huésped, para el cumplimiento de obligaciones legales y, en aquellos tratamientos que así lo requieran, sobre la base del consentimiento del interesado.</p>
+    <h2>Conservación de los datos</h2><p>Los datos serán conservados durante el tiempo necesario para gestionar la estancia y posteriormente durante los plazos exigidos por las obligaciones legales y para la atención de posibles responsabilidades.</p>
+    <h2>Destinatarios</h2><p>Los datos podrán ser comunicados a las administraciones públicas, fuerzas y cuerpos de seguridad, autoridades u otros destinatarios cuando exista una obligación legal. También podrán ser tratados por proveedores que presten servicios al establecimiento cuando sea necesario para la prestación de dichos servicios y con las garantías exigidas por la normativa aplicable.</p>
+    <h2>Derechos de las personas interesadas</h2><p>Puede ejercer, cuando proceda, sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, así como retirar el consentimiento respecto de aquellos tratamientos que se basen en él, sin que ello afecte a la licitud del tratamiento previo a su retirada.</p>
+    <h2>Contacto para información y ejercicio de derechos</h2><p>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>Correo electrónico: direccion@klaymanaparthotels.com</p>
+    <h2>Autoridad de control</h2><p>Si considera que el tratamiento de sus datos personales no se ajusta a la normativa, puede presentar una reclamación ante la autoridad de control competente.</p>
+    <h2>Información para el registro</h2><p>Al continuar con el proceso de registro, el huésped confirma que ha tenido acceso a esta información sobre el tratamiento de sus datos personales.</p><p>Los consentimientos opcionales, como los relativos a comunicaciones comerciales, deberán solicitarse de forma separada cuando corresponda.</p>
+  </section>
 
-<h2>Responsable del tratamiento</h2>
-<p><strong>SPB Klayman S.L.</strong><br>CIF: <strong>B76685130</strong><br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>Correo electrónico: <a href="mailto:direccion@klaymanaparthotels.com">direccion@klaymanaparthotels.com</a></p>
+  <section class="legal" data-lang="en">
+    <h1>Data protection</h1>
+    <p>In accordance with current personal data protection legislation, we inform you about the processing of the data provided during booking, registration and your stay at the property.</p>
+    <h2>Data controller</h2><p>SPB Klayman S.L.<br>Tax ID (CIF): B76685130<br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>Email: direccion@klaymanaparthotels.com</p>
+    <h2>Purposes</h2><p>Personal data may be processed to manage the booking and accommodation, provide the contracted services, manage payments and invoicing, deal with requests, incidents and complaints, and comply with the legal obligations applicable to the property.</p>
+    <h2>Legal basis</h2><p>Processing will be carried out, as applicable, because it is necessary for the performance of the contractual relationship with the guest, for compliance with legal obligations and, for processing activities that require it, on the basis of the data subject's consent.</p>
+    <h2>Data retention</h2><p>Data will be retained for the time necessary to manage the stay and thereafter for the periods required by legal obligations and for dealing with any possible liabilities.</p>
+    <h2>Recipients</h2><p>Data may be disclosed to public administrations, law-enforcement bodies, authorities or other recipients where there is a legal obligation to do so. Data may also be processed by service providers acting for the property when necessary to provide those services and subject to the safeguards required by applicable law.</p>
+    <h2>Rights of data subjects</h2><p>Where applicable, you may exercise your rights of access, rectification, erasure, objection, restriction and portability, and may withdraw consent for processing based on consent, without affecting the lawfulness of processing carried out before withdrawal.</p>
+    <h2>Contact for information and exercise of rights</h2><p>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>Email: direccion@klaymanaparthotels.com</p>
+    <h2>Supervisory authority</h2><p>If you consider that the processing of your personal data does not comply with the applicable legislation, you may lodge a complaint with the competent supervisory authority.</p>
+    <h2>Registration information</h2><p>By continuing with the registration process, the guest confirms that they have been given access to this information about the processing of their personal data.</p><p>Optional consents, such as those relating to marketing communications, must be requested separately where applicable.</p>
+  </section>
 
-<h2>Finalidades</h2>
-<p>Los datos personales podrán ser tratados para gestionar la reserva y el alojamiento, prestar los servicios contratados, gestionar cobros y facturación, atender solicitudes, incidencias y reclamaciones y cumplir las obligaciones legales aplicables al establecimiento.</p>
+  <section class="legal" data-lang="de">
+    <h1>Datenschutz</h1>
+    <p>Gemäß den geltenden Vorschriften zum Schutz personenbezogener Daten informieren wir Sie über die Verarbeitung der Daten, die Sie bei der Buchung, Registrierung und während Ihres Aufenthalts in der Unterkunft angeben.</p>
+    <h2>Verantwortlicher</h2><p>SPB Klayman S.L.<br>Steuernummer (CIF): B76685130<br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-Mail: direccion@klaymanaparthotels.com</p>
+    <h2>Zwecke</h2><p>Personenbezogene Daten können verarbeitet werden, um die Buchung und Beherbergung zu verwalten, die vertraglich vereinbarten Leistungen zu erbringen, Zahlungen und Rechnungsstellung zu bearbeiten, Anfragen, Vorfälle und Beschwerden zu behandeln sowie die für die Unterkunft geltenden gesetzlichen Verpflichtungen zu erfüllen.</p>
+    <h2>Rechtsgrundlage</h2><p>Die Verarbeitung erfolgt je nach Fall, weil sie für die Erfüllung des Vertragsverhältnisses mit dem Gast erforderlich ist, zur Erfüllung gesetzlicher Verpflichtungen und, bei Verarbeitungen, die dies erfordern, auf Grundlage der Einwilligung der betroffenen Person.</p>
+    <h2>Speicherdauer</h2><p>Die Daten werden so lange gespeichert, wie es für die Abwicklung des Aufenthalts erforderlich ist, und anschließend für die gesetzlich vorgeschriebenen Fristen sowie zur Bearbeitung möglicher Haftungsansprüche.</p>
+    <h2>Empfänger</h2><p>Die Daten können an öffentliche Verwaltungen, Sicherheitsbehörden, Behörden oder andere Empfänger weitergegeben werden, wenn eine gesetzliche Verpflichtung besteht. Sie können außerdem von Dienstleistern verarbeitet werden, die Leistungen für die Unterkunft erbringen, sofern dies für die Leistungserbringung erforderlich ist und die gesetzlich vorgeschriebenen Garantien eingehalten werden.</p>
+    <h2>Rechte der betroffenen Personen</h2><p>Soweit anwendbar, können Sie Ihre Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch, Einschränkung und Datenübertragbarkeit ausüben sowie eine Einwilligung für darauf beruhende Verarbeitungen widerrufen, ohne dass dadurch die Rechtmäßigkeit der vor dem Widerruf erfolgten Verarbeitung berührt wird.</p>
+    <h2>Kontakt für Informationen und die Ausübung von Rechten</h2><p>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-Mail: direccion@klaymanaparthotels.com</p>
+    <h2>Aufsichtsbehörde</h2><p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten nicht den geltenden Vorschriften entspricht, können Sie bei der zuständigen Aufsichtsbehörde Beschwerde einlegen.</p>
+    <h2>Informationen zur Registrierung</h2><p>Mit der Fortsetzung des Registrierungsprozesses bestätigt der Gast, Zugang zu diesen Informationen über die Verarbeitung seiner personenbezogenen Daten erhalten zu haben.</p><p>Optionale Einwilligungen, beispielsweise für Marketingmitteilungen, müssen gegebenenfalls separat eingeholt werden.</p>
+  </section>
 
-<h2>Base jurídica</h2>
-<p>El tratamiento se realizará, según corresponda, por ser necesario para la ejecución de la relación contractual con el huésped, para el cumplimiento de obligaciones legales y, en aquellos tratamientos que así lo requieran, sobre la base del consentimiento del interesado.</p>
+  <section class="legal" data-lang="fr">
+    <h1>Protection des données</h1>
+    <p>Conformément à la réglementation en vigueur en matière de protection des données à caractère personnel, nous vous informons du traitement des données fournies lors de la réservation, de l'enregistrement et du séjour dans l'établissement.</p>
+    <h2>Responsable du traitement</h2><p>SPB Klayman S.L.<br>CIF : B76685130<br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-mail : direccion@klaymanaparthotels.com</p>
+    <h2>Finalités</h2><p>Les données personnelles peuvent être traitées afin de gérer la réservation et l'hébergement, fournir les services contractés, gérer les paiements et la facturation, traiter les demandes, incidents et réclamations et respecter les obligations légales applicables à l'établissement.</p>
+    <h2>Base juridique</h2><p>Le traitement sera effectué, selon le cas, parce qu'il est nécessaire à l'exécution de la relation contractuelle avec le client, au respect d'obligations légales et, pour les traitements qui l'exigent, sur la base du consentement de la personne concernée.</p>
+    <h2>Conservation des données</h2><p>Les données seront conservées pendant la durée nécessaire à la gestion du séjour, puis pendant les délais exigés par les obligations légales et pour la gestion d'éventuelles responsabilités.</p>
+    <h2>Destinataires</h2><p>Les données peuvent être communiquées aux administrations publiques, forces et services de sécurité, autorités ou autres destinataires lorsqu'une obligation légale l'exige. Elles peuvent également être traitées par des prestataires fournissant des services à l'établissement lorsque cela est nécessaire à la fourniture de ces services et avec les garanties exigées par la réglementation applicable.</p>
+    <h2>Droits des personnes concernées</h2><p>Lorsque cela s'applique, vous pouvez exercer vos droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité, ainsi que retirer votre consentement pour les traitements fondés sur celui-ci, sans que cela n'affecte la licéité du traitement effectué avant son retrait.</p>
+    <h2>Contact pour information et exercice des droits</h2><p>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-mail : direccion@klaymanaparthotels.com</p>
+    <h2>Autorité de contrôle</h2><p>Si vous estimez que le traitement de vos données personnelles n'est pas conforme à la réglementation, vous pouvez introduire une réclamation auprès de l'autorité de contrôle compétente.</p>
+    <h2>Informations pour l'enregistrement</h2><p>En poursuivant le processus d'enregistrement, le client confirme avoir eu accès à ces informations concernant le traitement de ses données personnelles.</p><p>Les consentements facultatifs, tels que ceux relatifs aux communications commerciales, doivent être demandés séparément lorsque cela s'applique.</p>
+  </section>
 
-<h2>Conservación de los datos</h2>
-<p>Los datos serán conservados durante el tiempo necesario para gestionar la estancia y posteriormente durante los plazos exigidos por las obligaciones legales y para la atención de posibles responsabilidades.</p>
+  <section class="legal" data-lang="pt">
+    <h1>Proteção de dados</h1>
+    <p>De acordo com a legislação em vigor em matéria de proteção de dados pessoais, informamos sobre o tratamento dos dados fornecidos durante a reserva, o registo e a estadia no estabelecimento.</p>
+    <h2>Responsável pelo tratamento</h2><p>SPB Klayman S.L.<br>CIF: B76685130<br>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-mail: direccion@klaymanaparthotels.com</p>
+    <h2>Finalidades</h2><p>Os dados pessoais podem ser tratados para gerir a reserva e o alojamento, prestar os serviços contratados, gerir pagamentos e faturação, responder a pedidos, incidentes e reclamações e cumprir as obrigações legais aplicáveis ao estabelecimento.</p>
+    <h2>Base jurídica</h2><p>O tratamento será efetuado, conforme aplicável, por ser necessário à execução da relação contratual com o hóspede, ao cumprimento de obrigações legais e, nos tratamentos que o exijam, com base no consentimento do titular dos dados.</p>
+    <h2>Conservação dos dados</h2><p>Os dados serão conservados durante o período necessário para gerir a estadia e, posteriormente, durante os prazos exigidos pelas obrigações legais e para a gestão de eventuais responsabilidades.</p>
+    <h2>Destinatários</h2><p>Os dados podem ser comunicados às administrações públicas, forças e serviços de segurança, autoridades ou outros destinatários quando exista uma obrigação legal. Também podem ser tratados por prestadores de serviços do estabelecimento quando tal seja necessário para a prestação desses serviços e com as garantias exigidas pela legislação aplicável.</p>
+    <h2>Direitos dos titulares dos dados</h2><p>Quando aplicável, pode exercer os seus direitos de acesso, retificação, apagamento, oposição, limitação e portabilidade, bem como retirar o consentimento relativamente aos tratamentos baseados nesse consentimento, sem afetar a licitude do tratamento efetuado antes da retirada.</p>
+    <h2>Contacto para informação e exercício de direitos</h2><p>Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>E-mail: direccion@klaymanaparthotels.com</p>
+    <h2>Autoridade de controlo</h2><p>Se considerar que o tratamento dos seus dados pessoais não está em conformidade com a legislação, pode apresentar uma reclamação junto da autoridade de controlo competente.</p>
+    <h2>Informação para o registo</h2><p>Ao continuar o processo de registo, o hóspede confirma que teve acesso a esta informação sobre o tratamento dos seus dados pessoais.</p><p>Os consentimentos opcionais, como os relativos a comunicações comerciais, devem ser solicitados separadamente quando aplicável.</p>
+  </section>
 
-<h2>Destinatarios</h2>
-<p>Los datos podrán ser comunicados a las administraciones públicas, fuerzas y cuerpos de seguridad, autoridades u otros destinatarios cuando exista una obligación legal. También podrán ser tratados por proveedores que presten servicios al establecimiento cuando sea necesario para la prestación de dichos servicios y con las garantías exigidas por la normativa aplicable.</p>
-
-<h2>Derechos de las personas interesadas</h2>
-<p>Puede ejercer, cuando proceda, sus derechos de <strong>acceso, rectificación, supresión, oposición, limitación y portabilidad</strong>, así como retirar el consentimiento respecto de aquellos tratamientos que se basen en él, sin que ello afecte a la licitud del tratamiento previo a su retirada.</p>
-
-<div class="contact">
-<strong>Contacto para información y ejercicio de derechos</strong><br>
-Avenida de Ámsterdam, 6 – 38650 Arona (Santa Cruz de Tenerife)<br>
-Correo electrónico:
-<a href="mailto:direccion@klaymanaparthotels.com">direccion@klaymanaparthotels.com</a>
-</div>
-
-<h2>Autoridad de control</h2>
-<p>Si considera que el tratamiento de sus datos personales no se ajusta a la normativa, puede presentar una reclamación ante la autoridad de control competente.</p>
-</section>
-
-<section>
-<h1>Información para el registro</h1>
-<p>Al continuar con el proceso de registro, el huésped confirma que ha tenido acceso a esta información sobre el tratamiento de sus datos personales.</p>
-<p>Los consentimientos opcionales, como los relativos a comunicaciones comerciales, deberán solicitarse de forma separada cuando corresponda.</p>
-</section>
-
-<footer>Klayman Olivina · Protección de datos</footer>
-</main>
+  <div class="foot">Klayman Olivina · <span id="foot-label">Protección de datos</span></div>
+</div></div>
+<script>
+(function(){
+  const labels={
+    es:{title:'Información sobre protección de datos personales',foot:'Protección de datos'},
+    en:{title:'Information on personal data protection',foot:'Data protection'},
+    de:{title:'Informationen zum Schutz personenbezogener Daten',foot:'Datenschutz'},
+    fr:{title:'Informations sur la protection des données personnelles',foot:'Protection des données'},
+    pt:{title:'Informação sobre proteção de dados pessoais',foot:'Proteção de dados'}
+  };
+  const key='klayman_sihot_lang';
+  function setLang(lang){
+    if(!labels[lang]) lang='es';
+    document.documentElement.lang=lang;
+    document.querySelectorAll('.legal').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));
+    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+    document.getElementById('section-title').textContent=labels[lang].title;
+    document.getElementById('foot-label').textContent=labels[lang].foot;
+    try{localStorage.setItem(key,lang)}catch(e){}
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+  let saved='es'; try{saved=localStorage.getItem(key)||'es'}catch(e){}
+  setLang(saved);
+})();
+</script>
 </body>
 </html>
